@@ -194,6 +194,8 @@ class PainterController extends ChangeNotifier {
 
   bool get eraseMode => _eraseMode;
 
+  bool get inDrag => _pathHistory._inDrag;
+
   set eraseMode(bool enabled) {
     _eraseMode = enabled;
     _updatePaint();
